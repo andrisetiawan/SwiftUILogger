@@ -76,15 +76,9 @@ public struct LoggerView: View {
     
     @ViewBuilder
     private func navigation(content: () -> some View) -> some View {
-        if #available(iOS 16.0, *) {
-            NavigationStack {
+        NavigationView {
                 content()
             }
-        } else {
-            NavigationView {
-                content()
-            }
-        }
     }
     
     private var shareBlobButton: some View {
