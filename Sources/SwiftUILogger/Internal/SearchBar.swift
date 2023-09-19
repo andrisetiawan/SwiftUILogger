@@ -20,7 +20,7 @@ struct SearchBar: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(Color(UIColor.lightGray).opacity(0.25))
+                .foregroundColor(Color.gray.opacity(0.25))
             
             HStack(alignment: .center) {
                 Image(systemName: "magnifyingglass")
